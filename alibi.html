@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alibi</title>
+  <link rel="icon" type="image/png" href="images/logo-blanc.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="styleprojet.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+  <nav class="w-100 d-flex justify-content-between align-items-center ">
+    <a href="index.html"><div class="nom">Ethan <span>STEVENIN</span></div></a>
+    <div class="social-icons d-flex gap-3">
+      <a href="https://www.linkedin.com/in/ethan-stevenin/" target="_blank" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <div class="cv d-flex align-items-center gap-2">
+      <span class="me-3">MON CV</span>
+      <a href="documents/Ethan-Stevenin-CV.pdf" download="mon-cv.pdf" target="_blank">
+        <i class="bi bi-arrow-down-square fs-3"></i>
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 titre">
+        <h1 class="text-end my-5">ALL PROJECT</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid flex-grow-1 d-flex align-items-stretch mb-5">
+    <div class="row flex-grow-1 w-100">
+      <div class="col-md-8 d-flex flex-column justify-content-center align-items-start text-container">
+        <div class="container">
+          <div class="text-wrapper py-4">
+            <h1 class="portfolio-text">ALIBI</h1>
+            <p>Participation à la GameJam sur le thème "Frontière", avec la création d’un jeu d’espionnage narratif développé sous Godot en une semaine, de la conception à la réalisation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-0 mb-5">
+    <img src="images/MOODBOARD-alibi.png" alt="Description de l'image" class="img-fluid w-100">
+  </div>
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-md-6 titre">
+        <h2 class="text-start my-3">CONCEPT</h2>
+        <p>Créé dans le cadre de la GameJam sur le thème "Frontière", Alibi plonge le joueur dans la peau d’un agent secret chargé de missions internationales. À chaque mission, le joueur doit mémoriser un alibi détaillé. Lors d’un interrogatoire sous pression mené par le commissaire James, la moindre hésitation peut trahir sa couverture. Le jeu explore la frontière entre vérité et mensonge, mémoire et oubli.</p>
+      </div>
+      <div class="col-md-6 titre">
+        <img src="images/MockupJeu4-2048x1400.png" alt="Description de l'image" class="img-fluid w-100">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid design pt-4 pb-4 mb-4">
+    <div class="row">
+        <div class="col-md-8 titre d-flex">
+          <div id="carouselAlibi" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselAlibi" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselAlibi" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselAlibi" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselAlibi" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner rounded-3">
+              <div class="carousel-item active">
+                <img src="images/MockupJeu2-2048x1400.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/MockupJeu4-2048x1400.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/MockupJeu1-2048x1400.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/MockupJeu3-2048x1400.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAlibi" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAlibi" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+      <div class="col-md-4 titre">
+        <h2 class="text-start my-3">DESIGN</h2>
+        <p>Le design de Alibi a été pensé pour plonger le joueur dans une ambiance tendue et immersive. Un univers graphique épuré, inspiré des romans d'espionnage, a été décliné pour les différents écrans du jeu. Le travail a inclus la création de l’identité visuelle, la charte graphique, les interfaces, les assets du jeu, ainsi que des éléments de communication comme les affiches et bannières pour présenter le jeu dans le cadre du challenge.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mb-4">
+    <div class="row titre">
+        <h2 class="my-3">DEVELOPPEMENT DU JEU</h2>
+        <div class="col-md-9 align-items-start my-3">
+            <p>Le développement du jeu a été réalisé avec Godot Engine, permettant une gestion fluide des scènes, des dialogues et des interactions complexes avec le joueur. L'accent a été mis sur la logique de jeu, la navigation entre les phases de briefing et d’interrogatoire, et la gestion des erreurs de l’alibi. Le moteur a permis une rapidité de prototypage essentielle dans le cadre contraint d’une GameJam d’une semaine.</p>
+        </div>
+        <div class="col-md-3 align-items-start">
+            <h3 class="my-3">TECHNO</h3>
+            <p>Godot Engine
+            </p>                
+        </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid flex-grow-1 d-flex align-items-stretch mt-4 mb-5">
+    <div class="row flex-grow-1 w-100">
+        <div class="col-6 d-flex flex-column justify-content-center align-items-start text-white text-projet mt-4">
+          <a href="projet.html"><p class="mb-1 fw-bold projet">Tout les projet</p></a>
+          <a href="projet.html"><i class="bi bi-arrow-left-square icon-large"></i></a>      
+        </div>
+      <div class="col-6 d-flex flex-column justify-content-center align-items-end text-white text-projet mt-4">
+        <a href="privilege.html"><p class="mb-1 fw-bold projet">Projet suivant</p></a>
+        <a href="privilege.html"><i class="bi bi-arrow-right-square icon-large"></i></a>      
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+</body>
+</html>

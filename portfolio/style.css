@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'ImpactLocal';
+  src: url('./font/impact.woff2') format('woff2'), /* Format moderne */
+       url('./font/impact.woff') format('woff'),   /* Format alternatif */
+       url('./font/impact.ttf') format('truetype'); /* Format de secours */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #111111;
+  font-family: 'ImpactLocal',  sans-serif;
+}
+
+.ligne1 {
+  height: calc(100vh - 60px); /* hauteur de l'écran - footer */
+  overflow: hidden;
+}
+
+.projet{
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.text-projet{
+  padding-right: 4vw;
+}
+
+
+.text-container {
+  background-color: #ffffff;
+  color: #111111;
+  padding-left: 4vw;
+}
+
+.text-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.text-wrapper h1 {
+  margin: 0;
+}
+
+.text-wrapper h2 {
+  margin-top: -25px;
+}
+
+.portfolio-text {
+  font-size: calc(10vw + 1rem);
+  white-space: nowrap;
+  text-align: left;
+  width: 100%;
+  letter-spacing: calc((65vw - 9ch) / 8);
+}
+
+.developpeur-text {
+  font-size: calc(8vw + 0.5rem);
+  white-space: nowrap;
+  text-align: left;
+  width: 100%;
+  letter-spacing: calc((51vw - 9ch) / 8);
+}
+
+.full-container {
+  color: #ffffff;
+}
+
+.fullstack-text {
+  font-size: 21vw;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding-left: 4vW;
+  padding-right: 4vW;
+  color: white;
+  z-index: 1000;
+  font-family: 'ImpactLocal',  sans-serif;
+}
+
+.nom {
+  font-size: 2rem;
+}
+
+
+
+.cv span {
+  font-size: 2rem;
+
+}
+
+
+.icon-large {
+  font-size: 4rem; /* Ajustez la taille selon vos besoins */
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+/* Breakpoints mobiles et tablettes */
+@media (max-width: 992px) {
+
+  .ligne1 {
+    padding-bottom: 70px; /* Pour éviter que FULL STACK soit collé ou masqué par le footer */
+    overflow: visible;
+  }
+
+
+  .portfolio-text {
+    font-size: calc(9vw + 1rem);
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+  .developpeur-text {
+    font-size: calc(7vw + 0.5rem);
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+  .text-container {
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
+  }
+
+  .text-projet {
+    align-items: center !important;
+    text-align: center;
+    padding: 0;
+  }
+
+  .projet {
+    font-size: 1.8rem;
+  }
+
+  .icon-large {
+    font-size: 2.8rem;
+  }
+
+  .fullstack-text {
+    font-size: 18vw;
+    text-align: center;
+  }
+
+  .footer-fixed {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+    gap: 8px;
+  }
+
+  .cv span {
+    font-size: 1.5rem;
+  }
+
+  .nom {
+    font-size: 1.5rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .portfolio-text {
+    font-size: 12vw;
+  }
+
+  .developpeur-text {
+    font-size: 10vw;
+  }
+
+  .projet {
+    font-size: 1.5rem;
+  }
+
+  .icon-large {
+    font-size: 2.5rem;
+  }
+
+  .fullstack-text {
+    font-size: 22vw;
+  }
+
+  .text-wrapper h1 {
+    margin: 0;
+  }
+  
+  .text-wrapper h2 {
+    margin-top: 10px;
+  }
+
+  .fullstack-text {
+    font-size: 17vw;
+  }
+}
+
+
+
+.titre h1{
+  color: #ffffff;
+  font-size: 5.7rem;
+}
+
+
+

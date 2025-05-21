@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'ImpactLocal';
+    src: url('./font/impact.woff2') format('woff2'), /* Format moderne */
+         url('./font/impact.woff') format('woff'),   /* Format alternatif */
+         url('./font/impact.ttf') format('truetype'); /* Format de secours */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+
+  
+  body {
+    background-color: #111111;
+    font-family: 'ImpactLocal',  sans-serif;
+  }
+  
+
+  .titre h1{
+    color: #ffffff;
+    font-size: calc(2vw + 3rem);
+  }
+
+  .titre h2{
+    color: #ffffff;
+    font-size: calc(1vw + 3rem);
+  }
+
+  .titre h3{
+    color: #ffffff;
+    font-size: calc(1vw + 1rem);
+    letter-spacing: calc((8vw - 3ch) / 8);
+  }
+
+  .titre p{
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+  }
+
+  .design{
+    background-color: #ffffff;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .design h2,.design p{
+    color: #111111;
+
+  }
+
+
+  .projet{
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .text-projet{
+    padding-right: 7vw;
+    padding-left: 7vw;
+  }
+  
+  
+  .text-container {
+    background-color: #ffffff;
+    color: #111111;
+    padding-left: 4vw;
+  }
+  
+  .text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .text-wrapper h1 {
+    margin: 0;
+  }
+
+  .text-wrapper p {
+    font-family: "Inter", sans-serif;
+  }
+  
+  .text-wrapper h2 {
+    margin-top: -25px;
+  }
+  
+  .portfolio-text {
+    font-size: calc(4vw + 1rem);
+    white-space: nowrap;
+    text-align: left;
+    width: 100%;
+
+  }
+  
+  .developpeur-text {
+    font-size: calc(8vw + 0.5rem);
+    white-space: nowrap;
+    text-align: left;
+    width: 100%;
+    letter-spacing: calc((51vw - 9ch) / 8);
+  }
+
+
+  .icon-large {
+    font-size: 3.5rem; /* Ajustez la taille selon vos besoins */
+  }
+  
+  a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+
+  .card-custom {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 0px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 220px; /* fixe une hauteur pour uniformiser */
+    object-fit: cover; /* adapte l’image pour couvrir la zone */
+    border-radius: 0px;
+  }
+
+  .card-title {
+    font-size: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; /* Change alignement horizontal */
+    align-items: center;
+    gap: 1rem;
+}
+
+.card p{
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    margin: 0px;
+    margin-top: -20px;
+
+}
+
+nav {
+    height: 60px;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    color: white;
+    z-index: 1000;
+    font-family: 'ImpactLocal', sans-serif;
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Aligne verticalement les éléments */
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
+}
+
+.nom {
+    font-size: 2rem;
+    white-space: nowrap; /* Empêche le texte de se couper */
+}
+
+.cv span {
+    font-size: 2rem;
+    white-space: nowrap; /* Empêche le texte de se couper */
+}
+
+.vertical-text {
+    writing-mode: vertical-rl; /* Positionne le texte verticalement */
+    transform: rotate(180deg); /* Inverse la direction si nécessaire */
+    text-align: center; /* Centre le texte verticalement */
+  }
+
+  .border-image {
+    border: 10px solid white; /* Bordure blanche épaisse */
+  }
+
+@media (max-width: 768px) {
+    .footer-fixed {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .nom {
+        font-size: 1.5rem; /* Réduit la taille de la police */
+    }
+
+    .cv span {
+        font-size: 1.5rem; /* Réduit la taille de la police */
+    }
+
+    .card-title {
+        font-size: 2rem; /* Réduit la taille de la police */
+    }
+    .projet{
+        font-size: 1.2rem;
+      }
+
+      .icon-large {
+        font-size: 3rem; /* Ajustez la taille selon vos besoins */
+      }
+}
+
+@media (max-width: 576px) {
+    .footer-fixed {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .nom {
+        font-size: 1.2rem; /* Réduction supplémentaire pour très petits écrans */
+    }
+
+    .cv span {
+        font-size: 1.2rem; /* Réduction supplémentaire pour très petits écrans */
+    }
+
+    .card-title {
+        font-size: 1.8rem; /* Réduction supplémentaire pour très petits écrans */
+    }
+
+    .projet{
+        font-size: 1rem;
+      }
+
+      .icon-large {
+        font-size: 2.5rem; /* Ajustez la taille selon vos besoins */
+      }
+
+}
+
+
+.img-cover {
+    object-fit: cover; /* Permet à l'image de couvrir son conteneur */
+  }
+
